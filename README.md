@@ -1,7 +1,7 @@
 # Gusto
 ### Landing page for resturant
 
-> Live Link : https://devoahmedismail.github.io/Gusto/
+> Live Link : <a href="https://devoahmedismail.github.io/Gusto/" method="_blank">Gusto</a>
 
 > Features
 
