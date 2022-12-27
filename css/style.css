@@ -1,0 +1,182 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+body {
+    background-color: #141414;
+}
+.btn-nav {
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-nav,
+.btn-nav::before,
+.btn-nav::after {
+    width: 30px;
+    height: 3px;
+    background-color: #f4cb04;
+}
+
+.btn-nav::before,
+.btn-nav::after {
+    content: "";
+    position: absolute;
+}
+
+.btn-nav::before {
+    top: -10px;
+    left: 0;
+    /* animation: btnMenu 5s infinite; */
+}
+
+/* .btn-nav::before:focus{
+    animation: btnMenu 5s ease-in-out;
+} */
+
+.btn-nav::after {
+    top: 10px;
+    left: 0;
+}
+
+@keyframes btnMenu {
+    0% {
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 90deg;
+    }
+    100% {
+        rotate: 360deg
+    }
+}
+
+.sm-nav {
+    position: absolute;
+    background-color: #f4cb04;
+    height: 90vh;
+    width: 100%;
+    top: -900px;
+    right: -900px;
+    z-index: 99999;
+    transition: 0.5s ease-in-out;
+}
+
+.sm-nav.open {
+    top: 100px;
+    right: 0;
+}
+
+.sm-nav ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+/* .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.74);
+    z-index: -1;
+} */
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.category {
+    background-image: url('./../img/bg-foods.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.category .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: #000000db;
+}
+
+.team .card-body {
+    bottom: -3rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team .card-img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+/* Receips Page */
+.sorts .sorts-card .sort-card-img {
+    width: 100%;
+    height: 15rem;
+    object-fit: cover;
+}
+
+.sorts .sorts-body {
+    overflow: hidden;
+    height: 5rem;
+}
+
+.sorts .sorts-recipe-description {
+
+    
+}
+
+.sorts-card {
+    width: 100%;
+}
+
+@media (min-width:768px) {
+    .sorts-card {
+        width: 32%;
+    }
+}
+
+/* Meal page */
+.meal .meal-content .meal-img img {
+    height: 30rem;
+    width: 100%;
+    object-fit: contain;
+}

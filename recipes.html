@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gusto's recipes</title>
+    <link rel="shortcut icon" href="/img/logo-title.png" />
+    <meta name="theme-color" content="#f4cb04">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Liberaries -->
+        <!-- Swipper -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-[#141414] px-5">
+        <nav class="text-white py-6">
+            <div class="container mx-auto flex flex-row justify-between items-center">
+                <div class="logo">
+                    <a href="/">
+                        <img src="img/logo.png" alt="logo" class="w-48 h-full">
+                    </a>
+                </div>
+                <div class="links hidden md:block">
+                    <ul class="flex flex-row space-x-5">
+                        <li><a href="/" class="transition hover:text-yellowColor">Home</a></li>
+                        <li><a href="#" class="transition hover:text-yellowColor">About Us</a></li>
+                        <li><a href="#" class="transition hover:text-yellowColor">Menu</a></li>
+                        <li><a href="#" class="transition hover:text-yellowColor">Page</a></li>
+                        <li><a href="#" class="transition hover:text-yellowColor">Contact</a></li>
+                        <li><a href="#" class="bg-yellowColor px-4 py-2 rounded-xl text-black font-medium hover:bg-transparent hover:text-white transition">Book Seat</a></li>
+                    </ul>
+                </div>
+                <div class="btn-nav md:hidden">
+                    <span class="btn"></span>
+                </div>
+            </div>
+        </nav>
+        <!-- nav at phone -->
+        <div class="sm-nav text-white flex flex-col items-center justify-center">
+            <ul class="flex flex-col space-y-10 pt-5 text-lg">
+                <li class="block"><a href="#" class="transition hover:text-yellowColor">Home</a></li>
+                <li><a href="#" class="transition hover:text-yellowColor">About Us</a></li>
+                <li><a href="#" class="transition hover:text-yellowColor">Menu</a></li>
+                <li><a href="#" class="transition hover:text-yellowColor">Page</a></li>
+                <li><a href="#" class="transition hover:text-yellowColor">Contact</a></li>
+                <li><a href="#" class="bg-yellowColor px-4 py-2 rounded-xl text-black font-medium hover:bg-transparent hover:text-white transition">Book Seat</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- sorts -->
+    <section class="sorts mt-16 text-white">
+        <div class="container mx-auto">
+            <div class="sort-title">
+                <div class="category-header ml-2"> <!-- Get h3 from api --> </div>
+                <!-- cards container -->
+                <div class="sorts-cards-container flex flex-col flex-wrap md:flex-row justify-between px-5 md:px-0 mt-5">
+                    <!-- card from api -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+<!-- Footer -->
+<footer class="mt-16 py-5">
+    <div class="container mx-auto">
+        <div class="copyright text-white text-center">
+            <p>&copy; 2022 Gusto</p>
+            <p>Coded by <span class="text-yellowColor">Ahmed Ismail</span></p>
+        </div>
+    </div>
+</footer>
+<!-- Javascript -->
+
+<!-- Api -->
+<script src="js/api/categories.js"></script>
+
+<!-- Swipper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+
+<!-- Fontawesome -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js" integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<!-- my js -->
+<script src="js/main.js"></script>
+
+</body>
+</html>
